@@ -1,0 +1,8 @@
+:: CheatMenu
+
+<<link "Reload sidebar">><<script>>UIBar.update()<</script>><</link>>
+
+<<include "CheatMenuHealth">>\
+<<include "CheatMenuStamina">>\
+<<include "CheatMenuGold">>\
+<<include "CheatMenuTemperature">>\

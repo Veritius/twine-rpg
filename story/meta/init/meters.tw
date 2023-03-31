@@ -1,0 +1,15 @@
+:: StoryInitMeters
+
+<<newmeter 'health'>>
+	<<animation 100ms>>
+    <<sizing width 100% height>>
+	<<colors 'red' 'black'>>
+    <<label 'Health: $Player.Health' 'white' center>>
+<</newmeter>>
+
+<<newmeter 'stamina'>>
+	<<animation 100ms>>
+    <<sizing width 100%>>
+	<<colors 'green' 'black'>>
+    <<label 'Stamina: $Player.Stamina' 'white' center>>
+<</newmeter>>

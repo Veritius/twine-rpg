@@ -1,0 +1,20 @@
+:: CharacterSetupInitial
+<<type 30ms>>You stumble into a tavern, your cloak flapping in the wind.<</type>>
+<<type 30ms start 0.2s>>In front of you is an old man. He watches you for a long while, then finally speaks.<</type>>
+<<type 40ms start 0.3s>>"Welcome, traveller, to my humble tavern. I see you've been on a long journey. Tell me, what brings you here?"<</type>>\
+
+<<type 25ms>><i>This is your origin. It will decide your skills, and unlocks certain dialogue options.
+Your origin may not be changed after the fact, but you can assign skill points you've earned afterwards to any skill.</i><</type>>\
+
+<<type 3ms start 1s>>\
+<<link "I'd rather not say." "CharacterOriginNone">><</link>>
+    <i>This is the most balanced option, offering no specialisation, though you can specialise later.
+    This origin has no unique dialogue or story choices, and instead has more starting skill points.</i>
+
+<<link "I'm a nobleman trying to return my family to glory after we were done a great injustice." "CharacterOriginFallenNoble">><</link>>
+    <i>As a noble, you are an expert in social interactions. You know how to talk to the upper echelons of society, as well as persuading the lowest of the peasants.</i>
+
+<<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginEscapee">><</link>>
+    <i>As an escapee, you are a talented thief. You are excellent at crime. <!-- TODO: do better here -->
+    However, your hunters may not be far behind...</i>
+<</type>>

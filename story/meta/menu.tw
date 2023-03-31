@@ -1,0 +1,3 @@
+:: StoryMenu
+
+<<link "Cheats">><<dialog "Cheats">><<include "CheatMenu">><</dialog>><</link>>

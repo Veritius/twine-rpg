@@ -1,0 +1,7 @@
+:: PassageReady
+
+<<silently>>
+<<if $DayJustTickedOver == true>>
+    <<set $DaysPassed to $DaysPassed += 1>>
+<</if>>
+<</silently>>

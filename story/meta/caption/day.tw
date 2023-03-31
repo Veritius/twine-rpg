@@ -1,0 +1,37 @@
+:: StoryCaptionDay
+
+<<silently>>
+	<<set _time to Cycle.get('time')>>
+	<<if _time.check('Dawn')>>
+		<<set _timeMessage to "@@color:blanchedalmond;dawn@@">>
+	<<elseif _time.check('Morning')>>
+    	<<set _timeMessage to "@@color:lightskyblue;morning@@">>
+    <<elseif _time.check('Midday')>>
+    	<<set _timeMessage to "@@color:skyblue;midday@@">>
+    <<elseif _time.check('Afternoon')>>
+    	<<set _timeMessage to "@@color:sandybrown;afternoon@@">>
+    <<elseif _time.check('Evening')>>
+    	<<set _timeMessage to "@@color:indianred;evening@@">>
+    <<elseif _time.check('Night')>>
+    	<<set _timeMessage to "@@color:midnightblue;night@@">>
+    <<else>>
+    	/* You should never see this */
+    	<<set _timeMessage to "@@color:red;invalid@@">>
+	<</if>>
+
+	<<set _season to Cycle.get('seasons')>>
+    <<if _season.check('Spring')>>
+    	<<set _seasonMessage to "@@color:peru;spring@@">>
+    <<elseif _season.check('Summer')>>
+    	<<set _seasonMessage to "@@color:sandybrown;summer@@">>
+    <<elseif _season.check('Autumn')>>
+    	<<set _seasonMessage to "@@color:sienna;autumn@@">>
+    <<elseif _season.check('Winter')>>
+    	<<set _seasonMessage to "@@color:powderblue;winter@@">>
+    <<else>>
+    	<<set _seasonMessage to "@@color:red;invalid@@">>
+    <</if>>
+<</silently>>\
+\
+It's currently _seasonMessage.
+It is _timeMessage on <<showcycle 'days'>>

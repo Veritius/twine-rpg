@@ -1,0 +1,12 @@
+:: CheatMenuHealth
+
+<span id="health">\
+Health: $Player.Health/$Player.MaxHealth \
+<<nobr>>
+<<link "+">><<set $Player.Health++>><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
+<<link "-">><<set $Player.Health-->><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
+/
+<<link "+">><<set $Player.MaxHealth++>><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
+<<link "-">><<set $Player.MaxHealth-->><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
+<</nobr>>
+</span>

@@ -1,0 +1,27 @@
+:: StoryInitCycles
+
+<<newcycle 'seasons' 840>>
+	<<phase 'Spring'>>
+    <<phase 'Summer'>>
+	<<phase 'Autumn'>>
+    <<phase 'Winter'>>
+<</newcycle>>
+
+<<newcycle 'days' 28>>
+	<<phase 'Monday'>>
+    <<phase 'Tuesday'>>
+    <<phase 'Wednesday'>>
+    <<phase 'Thursday'>>
+    <<phase 'Friday'>>
+    <<phase 'Saturday'>>
+    <<phase 'Sunday'>>
+<</newcycle>>
+
+<<newcycle 'time' 4>>
+	<<phase 'Dawn'>>
+    <<phase 'Morning'>>
+    <<phase 'Midday'>>
+    <<phase 'Afternoon'>>
+    <<phase 'Evening'>>
+    <<phase 'Night'>>
+<</newcycle>>

@@ -1,0 +1,7 @@
+:: StoryInit
+
+<<set $DaysPassed to 0>>
+
+<<include StoryInitPlayer>>
+<<include StoryInitCycles>>
+<<include StoryInitMeters>>

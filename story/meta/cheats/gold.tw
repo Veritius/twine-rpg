@@ -1,0 +1,9 @@
+:: CheatMenuGold
+
+<span id="gold">\
+Gold: $Player.Gold \
+<<nobr>>
+<<link "+">><<set $Player.Gold++>><<replace "#gold">><<include "CheatMenuGold">><</replace>><</link>>
+<<link "-">><<set $Player.Gold-->><<replace "#gold">><<include "CheatMenuGold">><</replace>><</link>>
+<</nobr>>
+</span>

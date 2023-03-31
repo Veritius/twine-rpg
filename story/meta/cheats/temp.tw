@@ -1,0 +1,9 @@
+:: CheatMenuTemperature
+
+<span id="temperature">\
+Temperature: $Player.Temperature \
+<<nobr>>
+<<link "+">><<set $Player.Temperature++>><<replace "#temperature">><<include "CheatMenuTemperature">><</replace>><</link>>
+<<link "-">><<set $Player.Temperature-->><<replace "#temperature">><<include "CheatMenuTemperature">><</replace>><</link>>
+<</nobr>>
+</span>

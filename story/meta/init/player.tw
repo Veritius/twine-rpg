@@ -1,0 +1,38 @@
+:: StoryInitPlayer
+
+<!-- Character creation data -->
+<<set $RemainingSkillPoints to 0>>
+
+<!-- Player data map -->
+<<set $Player to {}>>
+
+<!-- Player name -->
+<<set $Player.FirstName to "">>
+<<set $Player.LastName to "">>
+<<set $Player.Sex to "Not chosen">>
+<<set $Player.Gender to "Not chosen">>
+<<set $Player.Origin to "None">>
+<<set $Player.Temperature to 25>>
+
+<!-- Player stats -->
+<<set $Player.MaxHealth to 20>>
+<<set $Player.Health to 20>>
+
+<<set $Player.MaxStamina to 20>>
+<<set $Player.Stamina to 20>>
+
+<!-- Player wealth -->
+<<set $Player.Gold to 100>>
+
+<!-- Player skills -->
+<<set $Player.Acrobatics to 0>>
+<<set $Player.Athletics to 0>>
+<<set $Player.Perception to 0>>
+<<set $Player.History to 0>>
+<<set $Player.Deception to 0>>
+<<set $Player.Insight to 0>>
+<<set $Player.Intimidation to 0>>
+<<set $Player.Performance to 0>>
+<<set $Player.Persuasion to 0>>
+<<set $Player.SleightOfHand to 0>>
+<<set $Player.Survival to 0>>
