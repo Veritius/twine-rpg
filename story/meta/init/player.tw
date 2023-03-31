@@ -9,7 +9,6 @@
 <!-- Player name -->
 <<set $Player.FirstName to "">>
 <<set $Player.LastName to "">>
-<<set $Player.Sex to "Not chosen">>
 <<set $Player.Gender to "Not chosen">>
 <<set $Player.Origin to "None">>
 <<set $Player.Temperature to 25>>
