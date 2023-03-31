@@ -2,6 +2,11 @@
 
 <<link "Reload sidebar">><<script>>UIBar.update()<</script>><</link>>
 
+Origin: <<listbox "$Player.Origin" autoselect>>
+<<option "No origin" "None">>
+<<option "Fallen Noble" "Fallen Noble">>
+<<option "Escapee" "Escapee">>
+<</listbox>>
 Gender: <<listbox "$Player.Gender" autoselect>>
 <<option "Male" "Male">>
 <<option "Female" "Female">>
