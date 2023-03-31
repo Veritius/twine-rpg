@@ -1,3 +1,16 @@
 :: StoryMenu
 
-<<link "Cheats">><<dialog "Cheats">><<include "CheatMenu">><</dialog>><</link>>
+<<nobr>>
+<<link "Options">>
+    <<dialog "Options">>
+        <<include "OptionsMenu">>
+    <</dialog>>
+<</link>>
+<<if $CheatsEnabled eq true>>
+    <<link "Cheats">>
+        <<dialog "Cheats">>
+            <<include "CheatMenu">>
+        <</dialog>>
+    <</link>>
+<</if>>
+<</nobr>>
