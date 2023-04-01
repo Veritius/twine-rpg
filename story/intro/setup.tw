@@ -22,4 +22,10 @@ Your origin may not be changed after the fact, but you can assign skill points y
     <span style="color:lightgreen">+3 to Athletics and Deception, +2 to Intimidation and Sleight of Hand
     Unlocks Escapee dialogue options.</span>
     <span style="color:firebrick">You are a wanted man.</span></i>
+
+<<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginMage">><</link>>
+    <i>You are a scholar of the arcane arts, wielding incredible power shunned by your peers.
+    <span style="color:lightgreen">+3 to History and Insight.</span>
+    <span style="color:dodgerblue">Unlocks magic, immensely powerful but hazardous powers.</span>
+    <span style="color:firebrick">Magic is outlawed by all major societies.</span></i>
 <</timed>><</type>>

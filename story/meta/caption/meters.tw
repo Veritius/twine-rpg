@@ -1,3 +1,9 @@
 :: StoryCaptionMeters
 
-<!-- <div><<showmeter 'health'>><<showmeter 'stamina'>></div> -->
+<!-- <<nobr>>
+<<showmeter 'health'>>
+<<showmeter 'stamina'>>
+<<if $Player.CanCastMagic is true>>
+    <<showmeter 'magicka'>>
+<</if>>
+<</nobr>> -->

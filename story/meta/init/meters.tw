@@ -2,14 +2,18 @@
 
 <<newmeter 'health'>>
 	<<animation 100ms>>
-    <<sizing width 100% height>>
+    <<sizing height 7px width 100%>>
 	<<colors 'red' 'black'>>
-    <<label 'Health: $Player.Health' 'white' center>>
 <</newmeter>>
 
 <<newmeter 'stamina'>>
 	<<animation 100ms>>
-    <<sizing width 100%>>
+    <<sizing height 7px width 100%>>
 	<<colors 'green' 'black'>>
-    <<label 'Stamina: $Player.Stamina' 'white' center>>
+<</newmeter>>
+
+<<newmeter 'magicka'>>
+	<<animation 100ms>>
+    <<sizing height 7px width 100%>>
+	<<colors 'dodgerblue' 'black'>>
 <</newmeter>>

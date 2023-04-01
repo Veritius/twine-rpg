@@ -1,0 +1,7 @@
+:: CharacterOriginMage
+<<silently>>
+    <<set $Player.Origin to "Mage">>
+    <<set $Player.CanCastMagic to true>>
+    <<set $Player.History to 3>>
+    <<set $Player.Insight to 3>>
+<</silently>>\
