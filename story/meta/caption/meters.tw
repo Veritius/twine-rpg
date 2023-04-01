@@ -1,6 +1,6 @@
 :: StoryCaptionMeters
 
-<<nobr>><div style="text-align: left">
+<<nobr>><div id="caption-meters" style="text-align: left">
 <!-- Health -->
 <<set _frac to $Player.Health / $Player.MaxHealth>>
 Health: You feel
@@ -11,6 +11,26 @@ Health: You feel
 <<if _frac >= 0.1 && _frac < 0.3>><span style="color:orange">awful.</span><</if>>
 <<if _frac < 0.1>><span style="color:red">like you're moments from death!</span><</if>>
 <<showmeter 'health' _frac>>
+<<if $CheatsEnabled eq true>>
+    <span class="debug-text" title="This is a debug option.">($Player.Health / $Player.MaxHealth)</span>
+    <<link "[+v]">>
+        <<set $Player.Health++>>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[-v]">>
+        <<set $Player.Health-->>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[+m]">>
+        <<set $Player.MaxHealth++>>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[-m]">>
+        <<set $Player.MaxHealth-->>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <br>
+<</if>>
 <br>
 
 <!-- Stamina -->
@@ -23,6 +43,26 @@ Stamina: You feel
 <<if _frac >= 0.1 && _frac < 0.3>><span style="color:orange">extremely tired.</span><</if>>
 <<if _frac < 0.1>><span style="color:red">completely exhausted!</span><</if>>
 <<showmeter 'stamina' _frac>>
+<<if $CheatsEnabled eq true>>
+    <span class="debug-text" title="This is a debug option.">($Player.Stamina / $Player.MaxStamina)</span>
+    <<link "[+v]">>
+        <<set $Player.Stamina++>>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[-v]">>
+        <<set $Player.Stamina-->>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[+m]">>
+        <<set $Player.MaxStamina++>>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <<link "[-m]">>
+        <<set $Player.MaxStamina-->>
+        <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+    <</link>>
+    <br>
+<</if>>
 
 <!-- Magic -->
 <<if $Player.CanCastMagic is true>>
@@ -37,5 +77,25 @@ Stamina: You feel
     <<if _frac >= 0.1 && _frac < 0.3>><span style="color:orange">awful.</span><</if>>
     <<if _frac < 0.1>><span style="color:red">totally expended.</span><</if>>
     <<showmeter 'magic' _frac>>
+    <<if $CheatsEnabled eq true>>
+        <span class="debug-text" title="This is a debug option.">($Player.Magic / $Player.MaxMagic)</span>
+        <<link "[+v]">>
+            <<set $Player.Magic++>>
+            <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+        <</link>>
+        <<link "[-v]">>
+            <<set $Player.Magic-->>
+            <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+        <</link>>
+        <<link "[+m]">>
+            <<set $Player.MaxMagic++>>
+            <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+        <</link>>
+        <<link "[-m]">>
+            <<set $Player.MaxMagic-->>
+            <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
+        <</link>>
+        <br>
+    <</if>>
 <</if>>
 </div><</nobr>>
