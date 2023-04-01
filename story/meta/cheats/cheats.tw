@@ -13,11 +13,12 @@ Gender: <<listbox "$Player.Gender" autoselect>>
 <</listbox>>
 
 <<cycle "$Player.CanCastMagic" autoselect>>
-    <<option "You can cast magic" true>>
-    <<option "You can't cast magic" false>>
+    <<option "Magic is enabled" true>>
+    <<option "Magic is disabled" false>>
 <</cycle>>
 
 <<include "CheatMenuHealth">>\
 <<include "CheatMenuStamina">>\
+<<include "CheatMenuMagicka">>\
 <<include "CheatMenuGold">>\
 <<include "CheatMenuTemperature">>\

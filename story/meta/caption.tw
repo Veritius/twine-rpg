@@ -1,6 +1,5 @@
 :: StoryCaption
 
-<<include StoryCaptionStatus>>
 <<include StoryCaptionDay>>
 
 You have <span style="color:gold">$Player.Gold</span> gold.
