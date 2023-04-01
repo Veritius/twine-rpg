@@ -3,17 +3,17 @@
 <<newmeter 'health'>>
 	<<animation 100ms>>
     <<sizing height 7px width 100%>>
-	<<colors 'red' 'black'>>
+	<<colors 'red' 'brown'>>
 <</newmeter>>
 
 <<newmeter 'stamina'>>
 	<<animation 100ms>>
     <<sizing height 7px width 100%>>
-	<<colors 'green' 'black'>>
+	<<colors 'green' 'palegreen'>>
 <</newmeter>>
 
 <<newmeter 'magic'>>
 	<<animation 100ms>>
     <<sizing height 7px width 100%>>
-	<<colors 'dodgerblue' 'black'>>
+	<<colors 'dodgerblue' 'lightslategray'>>
 <</newmeter>>
