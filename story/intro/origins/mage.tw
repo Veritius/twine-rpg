@@ -5,3 +5,8 @@
     <<set $Player.History to 3>>
     <<set $Player.Insight to 3>>
 <</silently>>\
+<<type 30ms>>//"I'm a mage-scholar searching for knowledge in these foreign lands."//<</type>>
+<<type 40ms start 1s>>//The old man coughs violently, then starts to speak.//<</type>>
+<<type 40ms start 1s>>"Get out of my bar."<</type>>
+<<type 30ms start 1s>>//"I'm sorry?" you say.//<</type>>
+<<type 40ms start 1s>>"I said, get the hell out of my bar!" he says, slamming his fist on the table.<</type>>
