@@ -6,15 +6,20 @@
 <<type 25ms>><i>This is your origin. It will decide your skills, and unlocks certain dialogue options.
 Your origin may not be changed after the fact, but you can assign skill points you've earned afterwards to any skill.</i><</type>>\
 
-<<type 3ms start 1s>>\
+<<type 1ms>><<timed 1s t8n>>\
 <<link "I'd rather not say." "CharacterOriginNone">><</link>>
     <i>This is the most balanced option, offering no specialisation, though you can specialise later.
-    This origin has no unique dialogue or story choices, and instead has more starting skill points.</i>
+    This origin has no unique dialogue or story choices, and instead has more starting skill points.
+    <span style="color:lightgreen">+1 to all skills</span></i>
 
 <<link "I'm a nobleman trying to return my family to glory after we were done a great injustice." "CharacterOriginFallenNoble">><</link>>
-    <i>As a noble, you are an expert in social interactions. You know how to talk to the upper echelons of society, as well as persuading the lowest of the peasants.</i>
+    <i>As a noble, you are an expert in social interactions. You know how to talk to the upper echelons of society, as well as persuading the lowest of the peasants.
+    <span style="color:lightgreen">+3 to History and Persuasion, +2 to Performance, +1 to Insight
+    Unlocks Fallen Noble dialogue options.</span></i>
 
 <<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginEscapee">><</link>>
     <i>As an escapee, you are a talented thief. You are excellent at crime. <!-- TODO: do better here -->
-    However, your hunters may not be far behind...</i>
-<</type>>
+    However, your hunters may not be far behind...
+    <span style="color:lightgreen">+3 to Athletics and Deception, +2 to Intimidation and Sleight of Hand
+    Unlocks Escapee dialogue options.</span></i>
+<</timed>><</type>>
