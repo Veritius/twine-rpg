@@ -12,7 +12,7 @@
 	<<colors 'green' 'black'>>
 <</newmeter>>
 
-<<newmeter 'magicka'>>
+<<newmeter 'magic'>>
 	<<animation 100ms>>
     <<sizing height 7px width 100%>>
 	<<colors 'dodgerblue' 'black'>>

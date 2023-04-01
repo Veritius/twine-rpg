@@ -21,8 +21,8 @@
 <<set $Player.Stamina to 20>>
 
 <<set $Player.CanCastMagic to false>>
-<<set $Player.MaxMagicka to 20>>
-<<set $Player.Magicka to 20>>
+<<set $Player.MaxMagic to 20>>
+<<set $Player.Magic to 20>>
 
 <!-- Player wealth -->
 <<set $Player.Gold to 100>>

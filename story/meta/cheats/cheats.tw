@@ -19,6 +19,6 @@ Gender: <<listbox "$Player.Gender" autoselect>>
 
 <<include "CheatMenuHealth">>\
 <<include "CheatMenuStamina">>\
-<<include "CheatMenuMagicka">>\
+<<include "CheatMenuMagic">>\
 <<include "CheatMenuGold">>\
 <<include "CheatMenuTemperature">>\

@@ -24,11 +24,11 @@ Stamina: You feel
 <<if _frac < 0.1>><span style="color:red">completely exhausted!</span><</if>>
 <<showmeter 'stamina' _frac>>
 
-<!-- Magicka -->
+<!-- Magic -->
 <<if $Player.CanCastMagic is true>>
     <br>
-    <<set _frac to $Player.Magicka / $Player.MaxMagicka>>
-    Magicka: You feel
+    <<set _frac to $Player.Magic / $Player.MaxMagic>>
+    Magic: You feel
     <<if _frac > 1>><span style="color:dodgerblue">like you're bursting with power!</span><</if>>
     <<if _frac >= 0.9 && _frac <= 1.0>><span style="color:green">potent and energetic!</span><</if>>
     <<if _frac >= 0.7 && _frac < 0.9>><span style="color:lime">good.</span><</if>>
@@ -36,6 +36,6 @@ Stamina: You feel
     <<if _frac >= 0.3 && _frac < 0.5>><span style="color:yellow">bad.</span><</if>>
     <<if _frac >= 0.1 && _frac < 0.3>><span style="color:orange">awful.</span><</if>>
     <<if _frac < 0.1>><span style="color:red">totally expended.</span><</if>>
-    <<showmeter 'magicka' _frac>>
+    <<showmeter 'magic' _frac>>
 <</if>>
 </div><</nobr>>
