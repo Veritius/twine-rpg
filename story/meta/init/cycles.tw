@@ -1,27 +1,62 @@
 :: StoryInitCycles
 
-<<newcycle 'seasons' 840>>
+/*
+6 turns per time step
+6 phases in time cycle
+6*6 = 36 turns per day
+36*15 = 540 turns per month
+540*3 = 1620 turns per season
+*/
+
+<!-- Make sure this matches the ordering in the months cycle! -->
+<<newcycle 'seasons' 1620>>
 	<<phase 'Spring'>>
     <<phase 'Summer'>>
 	<<phase 'Autumn'>>
     <<phase 'Winter'>>
 <</newcycle>>
 
-<<newcycle 'days' 28>>
-	<<phase 'Monday'>>
-    <<phase 'Tuesday'>>
-    <<phase 'Wednesday'>>
+<!--
+This is deliberately out of order so that the player will start in Spring.
+This uses Australian time. Bad luck if you're not Australian.
+May change in future.
+
+All months are 15 days each. Too hard otherwise with the cycles system.
+-->
+<<newcycle 'months' 540>>
+    <!-- Spring -->
+    <<phase 'September'>> <!-- Player starts in September -->
+    <<phase 'October'>>
+    <<phase 'November'>>
+    <!-- Summer -->
+    <<phase 'December'>>
+    <<phase 'January'>> <!-- Actual start of the year -->
+    <<phase 'February'>>
+    <!-- Autumn -->
+    <<phase 'March'>>
+    <<phase 'April'>>
+    <<phase 'May'>>
+    <!-- Winter -->
+    <<phase 'June'>>
+    <<phase 'July'>>
+    <<phase 'August'>>
+<</newcycle>>
+
+<<newcycle 'days' 36>>
+    <<phase 'Wednesday'>> <!-- Player starts on Wednesday -->
     <<phase 'Thursday'>>
     <<phase 'Friday'>>
     <<phase 'Saturday'>>
     <<phase 'Sunday'>>
+    <<phase 'Monday'>> <!-- Actual start of week -->
+    <<phase 'Tuesday'>>
 <</newcycle>>
 
-<<newcycle 'time' 4>>
-	<<phase 'Dawn'>>
+<<newcycle 'time' 6>>
+    <<phase 'Evening'>> <!-- Player starts in the evening. -->
+    <<phase 'Night'>>
+    <<phase 'Dawn'>> <!-- Actual start of day -->
     <<phase 'Morning'>>
     <<phase 'Midday'>>
     <<phase 'Afternoon'>>
-    <<phase 'Evening'>>
-    <<phase 'Night'>>
 <</newcycle>>
