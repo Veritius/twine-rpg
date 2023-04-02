@@ -1,4 +1,4 @@
-:: CharacterOriginMage
+:: CharacterOriginMage [cycles.pause.menu]
 <<silently>>
     <<set $Player.Origin to "Mage">>
     <<set $Places.Therlain.OldMan.Reputation to -25>>

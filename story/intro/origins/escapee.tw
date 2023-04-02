@@ -1,4 +1,4 @@
-:: CharacterOriginEscapee
+:: CharacterOriginEscapee [cycles.pause.menu]
 <<silently>>
     <<set $Player.Origin to "Escapee">>
     <<set $Player.Skills.Athletics to 3>>
