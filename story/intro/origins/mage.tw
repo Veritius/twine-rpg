@@ -17,12 +17,10 @@
 <</type>>
 
 :: CharacterOriginMageDontUnderstand
-
 <<type 30ms>>//"I don't understand," you say. "What have I done wrong?"//<</type>>
 <<type 40ms start 1s>>"You'll do well to hear this warning. Your kind aren't wanted here. If you perform a single magic trick in these lands, your head is as good as gone. \
 My advice is to get on a boat and leave this place as fast as you can. I'll grant you one chance and one chance only, and not tell the hunters to kill you like the vermin you are. \
 Now, get out of my bar before I kill you myself."<</type>>
 
 :: CharacterOriginMageBackAway
-
 <<type 30ms>>//You back away from him towards the exit.//<</type>>
