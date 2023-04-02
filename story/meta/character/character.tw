@@ -1,7 +1,7 @@
 :: CharacterMenu
 
 You are $Player.FirstName $Player.LastName
-You <span class="stat-data"><<if $Player.Origin is "None">>have no origin<<else>>are a $Player.Origin<</if>>.</span>
+You <<if $Player.Origin is "None">>have <span class="stat-data">no origin.</span><<else>>are a <span class="stat-data">$Player.Origin.</span><</if>>
 \
 <<if $Player.CanCastMagic is true>>
     You are <span class="magical">blessed with magical powers.</span>
