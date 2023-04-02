@@ -1,6 +1,11 @@
 :: StoryMenu
 
 <<nobr>>
+<<link "Character">>
+    <<dialog "Character">>
+        <<include "CharacterMenu">>
+    <</dialog>>
+<</link>>
 <<link "Options">>
     <<dialog "Options">>
         <<include "OptionsMenu">>

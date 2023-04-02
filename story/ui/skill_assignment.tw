@@ -1,1 +1,13 @@
 :: SkillPointAssignmentUi
+You have <span class="stat-data">$Player.RemainingSkillPoints</span> points remaining.
+Your Acrobatics skill is <span class="stat-data">$Player.Skills.Acrobatics.</span>
+Your Athletics skill is <span class="stat-data">$Player.Skills.Athletics.</span>
+Your Perception skill is <span class="stat-data">$Player.Skills.Perception.</span>
+Your History skill is <span class="stat-data">$Player.Skills.History.</span>
+Your Deception skill is <span class="stat-data">$Player.Skills.Deception.</span>
+Your Insight skill is <span class="stat-data">$Player.Skills.Insight.</span>
+Your Intimidation skill is <span class="stat-data">$Player.Skills.Intimidation.</span>
+Your Performance skill is <span class="stat-data">$Player.Skills.Performance.</span>
+Your Persuasion skill is <span class="stat-data">$Player.Skills.Persuasion.</span>
+Your Sleight Of Hand skill is <span class="stat-data">$Player.Skills.SleightOfHand.</span>
+Your Survival skill is <span class="stat-data">$Player.Skills.Survival.</span>

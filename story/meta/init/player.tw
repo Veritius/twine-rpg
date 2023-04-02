@@ -1,10 +1,8 @@
 :: StoryInitPlayer
 
-<!-- Character creation data -->
-<<set $RemainingSkillPoints to 0>>
-
 <!-- Player data map -->
 <<set $Player to {}>>
+<<set $Player.RemainingSkillPoints to 0>>
 
 <!-- Player name -->
 <<set $Player.FirstName to "">>

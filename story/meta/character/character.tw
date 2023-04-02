@@ -1,0 +1,11 @@
+:: CharacterMenu
+
+You are $Player.FirstName $Player.LastName
+You <span class="stat-data"><<if $Player.Origin is "None">>have no origin<<else>>are a $Player.Origin<</if>>.</span>
+\
+<<if $Player.CanCastMagic is true>>
+    You are <span class="magical">blessed with magical powers.</span>
+    You have a mana pool of <span class="stat-data">$Player.MaxMagic</span>, which is <span class="stat-data"><<= ($Player.Magic / $Player.MaxMagic) * 100>>% full.</span>
+<</if>>\
+<hr>
+<<include "SkillPointAssignmentUi">>
