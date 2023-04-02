@@ -1,3 +1,27 @@
-.stat-data {
-    color: lightgreen;
+.stat-annotation {
+    color: lightgray;
+}
+
+.stat-excellent {
+    color: lime;
+}
+
+.stat-good {
+    color: lawngreen;
+}
+
+.stat-okay {
+    color: yellowgreen;
+}
+
+.stat-poor {
+    color: yellow;
+}
+
+.stat-bad {
+    color: orange;
+}
+
+.stat-awful {
+    color: orangered;
 }
