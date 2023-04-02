@@ -1,4 +1,6 @@
 :: OptionsMenu
+//Due to a limitation of the game engine, settings are stored in the save file.
+Loading a save will also load the associated settings.//
 
 <<nobr>>
     <b><span style="color: red">The Danger Zone</span></b>
