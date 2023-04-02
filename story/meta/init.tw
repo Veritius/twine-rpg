@@ -5,3 +5,4 @@
 <<include StoryInitPlayer>>
 <<include StoryInitCycles>>
 <<include StoryInitMeters>>
+<<include StoryInitPlaces>>

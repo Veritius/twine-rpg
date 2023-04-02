@@ -1,0 +1,8 @@
+:: StoryInitPlaces
+
+<<set $Places to {}>>
+
+<<set $Places.Therlain to {}>>
+
+<<set $Places.Therlain.OldMan to {}>>
+<<set $Places.Therlain.OldMan.Reputation to 0>>

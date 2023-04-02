@@ -1,0 +1,32 @@
+:: TherlainOldMansTavern
+<<nobr>>
+    <<set _rep to $Places.Therlain.OldMan.Reputation>>
+    <<if _rep < -20 && _rep > -30>>
+        <<goto "TherlainOldManDemandLeave">>
+    <<elseif _rep < -30>>
+        <<goto "TherlainOldManAttack">>
+    <</if>>
+<</nobr>>\
+
+:: TherlainOldManDemandLeave
+<<set $Places.Therlain.OldMan.Reputation to $Places.Therlain.OldMan.Reputation - 10>>
+<<type 30ms>>"What the hell do you think you're doing in my bar?!" the old man yells.<</type>>\
+
+<<type 1ms start 1s>><<link "Leave" "TherlainTownSquare">><</link>><</type>>
+
+:: TherlainOldManAttack
+<<type 30ms>>"You've made your last mistake." the old man says. \
+You watch the old man raise his hands, <span class="magical">arcs of arcane energy dancing between his fingertips and along his arms.</span>
+
+Before you can react, a tremendous bolt of lightning hits you in the chest, \
+<<nobr>> <!-- Do better -->
+    <<if $Player.Health < 60 && $Player.Magic < 30>>>>
+        <span style="color:red">killing you instantly.</span>
+    <<elseif $Player.Magic >= 30 >>
+        <<set $Player.Magic to $Player.Magic - 30>>
+        <span class="magical">but you deflect his attack.</span>
+    <<elseif $Player.Health >= 60>>
+        <<set $Player.Health to $Player.Health - 60>>
+        <span style="color:red">but you survive the blast.</span>
+    <</if>>
+<</nobr>><</type>>

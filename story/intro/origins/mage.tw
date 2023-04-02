@@ -1,6 +1,7 @@
 :: CharacterOriginMage
 <<silently>>
     <<set $Player.Origin to "Mage">>
+    <<set $Places.Therlain.OldMan.Reputation to -25>>
     <<set $Player.CanCastMagic to true>>
     <<set $Player.Skills.History to 3>>
     <<set $Player.Skills.Insight to 3>>
@@ -24,3 +25,4 @@ Now, get out of my bar before I kill you myself."<</type>>
 
 :: CharacterOriginMageBackAway
 <<type 30ms>>//You back away from him towards the exit.//<</type>>
+<<type 1ms start 0.5s>><<link "Continue" "TherlainTownSquare">><</link>><</type>>
