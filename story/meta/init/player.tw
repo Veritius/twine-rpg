@@ -28,14 +28,20 @@
 <<set $Player.Gold to 100>>
 
 <!-- Player skills -->
-<<set $Player.Acrobatics to 0>>
-<<set $Player.Athletics to 0>>
-<<set $Player.Perception to 0>>
-<<set $Player.History to 0>>
-<<set $Player.Deception to 0>>
-<<set $Player.Insight to 0>>
-<<set $Player.Intimidation to 0>>
-<<set $Player.Performance to 0>>
-<<set $Player.Persuasion to 0>>
-<<set $Player.SleightOfHand to 0>>
-<<set $Player.Survival to 0>>
+<<set $Player.Skills to {}>>
+<<set $Player.Skills.Acrobatics to 0>>
+<<set $Player.Skills.Athletics to 0>>
+<<set $Player.Skills.Perception to 0>>
+<<set $Player.Skills.History to 0>>
+<<set $Player.Skills.Deception to 0>>
+<<set $Player.Skills.Insight to 0>>
+<<set $Player.Skills.Intimidation to 0>>
+<<set $Player.Skills.Performance to 0>>
+<<set $Player.Skills.Persuasion to 0>>
+<<set $Player.Skills.SleightOfHand to 0>>
+<<set $Player.Skills.Survival to 0>>
+
+<<!-- Player morality tracker -->>
+<<set $Player.Morality to {}>>
+<<set $Player.Morality.Kindness to 0>>
+<<set $Player.Morality.Generosity to 0>>

@@ -2,8 +2,8 @@
 <<silently>>
     <<set $Player.Origin to "Mage">>
     <<set $Player.CanCastMagic to true>>
-    <<set $Player.History to 3>>
-    <<set $Player.Insight to 3>>
+    <<set $Player.Skills.History to 3>>
+    <<set $Player.Skills.Insight to 3>>
 <</silently>>\
 <<type 30ms>>//"I'm a mage-scholar searching for knowledge in these foreign lands."//<</type>>
 <<type 40ms start 1s>>//The old man coughs violently, then starts to speak.//<</type>>
