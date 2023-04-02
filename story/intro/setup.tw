@@ -10,23 +10,23 @@ Your origin may not be changed after the fact, but you can assign skill points y
 <<link "I'd rather not say." "CharacterOriginNone">><</link>>
     <i>You are just another traveler, out to make your fortune or make your name known.
     This origin has no unique dialogue or story choices, and instead has more starting skill points.
-    <span style="color:lightgreen">+1 to all skills</span></i>
+    <span class="beneficial">+1 to all skills</span></i>
 
 <<link "I'm a nobleman trying to return my family to glory after we were done a great injustice." "CharacterOriginFallenNoble">><</link>>
     <i>As a noble, you are an expert in social interactions. You know how to talk to the upper echelons of society, as well as persuading the lowest of the peasants.
-    <span style="color:lightgreen">+3 to History and Persuasion, +2 to Performance, +1 to Insight
+    <span class="beneficial">+3 to History and Persuasion, +2 to Performance, +1 to Insight
     Unlocks Fallen Noble dialogue options.</span></i>
 
 <<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginEscapee">><</link>>
     <i>As an escapee, you are a talented thief. <!-- TODO: do better here -->
-    <span style="color:lightgreen">+3 to Athletics and Deception, +2 to Intimidation and Sleight of Hand
+    <span class="beneficial">+3 to Athletics and Deception, +2 to Intimidation and Sleight of Hand
     Unlocks Escapee dialogue options.</span>
-    <span style="color:firebrick">You are a wanted man.</span></i>
+    <span class="detrimental">You are a wanted man.</span></i>
 
 <<link "I am a mage and scholar, searching for knowledge." "CharacterOriginMage">><</link>>
     <i>You are a scholar of the arcane arts, wielding incredible power shunned by your peers.
-    <span style="color:lightgreen">+3 to History and Insight
+    <span class="beneficial">+3 to History and Insight
     Unlocks Mage dialogue options.</span>
     <span class="magical">Unlocks magic, immensely powerful but hazardous powers.</span>
-    <span style="color:firebrick">Magic is shunned in insert the name of the country here.</span></i>
+    <span class="detrimental">Magic is shunned in insert the name of the country here.</span></i>
 <</timed>><</type>>

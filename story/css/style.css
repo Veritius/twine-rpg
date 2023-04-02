@@ -1,3 +1,11 @@
+.beneficial {
+    color: lightgreen;
+}
+
+.detrimental {
+    color: firebrick;
+}
+
 .magical {
     color: dodgerblue;
 }
