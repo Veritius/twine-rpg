@@ -1,32 +1,18 @@
 :: CharacterSetupInitial [cycles.pause.menu]
 <<type 30ms>>You stumble into a tavern, your cloak flapping in the wind.<</type>>
 <<type 30ms start 0.2s>>In front of you is an old man. He watches you for a long while, then finally speaks.<</type>>
-<<type 40ms start 0.3s>>"Welcome, traveller, to my humble tavern. I see you've been on a long journey. Tell me, what brings you here?"<</type>>\
-
-<<type 25ms>><i>This is your origin. It will decide your skills, and unlocks certain dialogue options.
-Your origin may not be changed after the fact, but you can assign skill points you've earned afterwards to any skill.</i><</type>>\
-
-<<type 1ms>><<timed 1s t8n>><!-- The type macro is used here to make sure that this section only appears when the rest is done typing, even though it doesn't actually do anything -->\
-<<link "I'd rather not say." "CharacterOriginNone">><</link>>
-    <i>You are just another traveler, out to make your fortune or make your name known.
-    This origin has no unique dialogue or story choices, and instead has more starting skill points.
-    <span class="beneficial">+1 to all skills</span></i>
-
-<<link "I'm a nobleman trying to return my family to glory after we were done a great injustice." "CharacterOriginFallenNoble">><</link>>
-    <i>As a noble, you are an expert in social interactions. You know how to talk to the upper echelons of society, as well as persuading the lowest of the peasants.
-    <span class="beneficial">+3 to History and Persuasion, +2 to Performance, +1 to Insight
-    Unlocks Fallen Noble dialogue options.</span></i>
-
-<<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginEscapee">><</link>>
-    <i>As an escapee, you are a talented thief. <!-- TODO: do better here -->
-    <span class="beneficial">+3 to Athletics and Deception, +2 to Intimidation and Thievery
-    Unlocks Escapee dialogue options.</span>
-    <span class="detrimental">You are a wanted man.</span></i>
-
-<<link "I am a mage and scholar, searching for knowledge." "CharacterOriginMage">><</link>>
-    <i>You are a scholar of the arcane arts, wielding incredible power shunned by your peers.
-    <span class="beneficial">+3 to History and Insight
-    Unlocks Mage dialogue options.</span>
-    <span class="magical">Unlocks magic, immensely powerful but hazardous powers.</span>
-    <span class="detrimental">Magic is shunned in insert the name of the country here.</span></i>
-<</timed>><</type>>
+<<type 40ms start 0.3s>>"Welcome, traveller, to my humble tavern. It's a little dark, who am I talkin' to?"<</type>>
+<<type 30ms start 0.6s>>\
+<<link "I'm a man (male)">>
+    <<set $Player.Gender to "Male">>
+    <<goto "CharacterSetupOrigin">>
+<</link>>
+<<link "I'm a woman (female)">>
+    <<set $Player.Gender to "Female">>
+    <<goto "CharacterSetupOrigin">>
+<</link>>
+<<link "I'm just a traveller (neither)">>
+    <<set $Player.Gender to "Other">>
+    <<goto "CharacterSetupOrigin">>
+<</link>>
+<</type>>\

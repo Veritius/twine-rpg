@@ -25,3 +25,15 @@ sugarcube-2:
       name: skillmenu
     modifystat:
       name: modifystat
+    they:
+      name: they
+    them:
+      name: them
+    theirs:
+      name: theirs
+    their:
+      name: their
+    themself:
+      name: themself
+    person:
+      name: person
