@@ -1,0 +1,55 @@
+:: PlayerPronounsMacros [widget]
+
+<<widget "subjective">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            he
+        <<case "Female">>
+            her
+    <</switch>>
+<</widget>>
+
+<<widget "objective">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            him
+        <<case "Female">>
+            her
+    <</switch>>
+<</widget>>
+
+<<widget "possessive">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            his
+        <<case "Female">>
+            hers
+    <</switch>>
+<</widget>>
+
+<<widget "determiner">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            his
+        <<case "Female">>
+            her
+    <</switch>>
+<</widget>>
+
+<<widget "reflexive">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            himself
+        <<case "Female">>
+            herself
+    <</switch>>
+<</widget>>
+
+<<widget "noun">>
+    <<switch $Player.Gender>>
+        <<case "Male">>
+            man
+        <<case "Female">>
+            woman
+    <</switch>>
+<</widget>>
