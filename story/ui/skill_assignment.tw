@@ -22,7 +22,7 @@ You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> point
 
 :: SkillPointAssignmentUiWidgets [widget]
 <<widget "skillui">>\
-    <span id="skill-menu-unset" style="border: 1.5px solid white; width: 30%; padding: 2px; margin: 3px; flex-grow: 1">\
+    <span id="skill-menu-unset" style="border: 1px solid white; width: 30%; padding: 2px 2px 2px 6px; margin: 3px; flex-grow: 1">\
     <<nobr>>
         <!-- TODO: Figure out a better way of doing this, as it causes flicker when clicked. -->
         <<timed 5ms>>
