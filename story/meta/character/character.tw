@@ -3,6 +3,8 @@
 You are $Player.FirstName $Player.LastName
 You <<if $Player.Origin is "None">>have <span class="stat-annotation">no origin.</span><<else>>are a <span class="stat-annotation">$Player.Origin.</span><</if>>
 It has been <span class="stat-annotation">$DaysPassed</span> days since your adventure began.
+
+You have <span style="color: gold">$Player.Gold</span> gold.
 \
 <<if $Player.CanCastMagic is true>>
     You are <span class="magical">blessed with magical powers.</span>
