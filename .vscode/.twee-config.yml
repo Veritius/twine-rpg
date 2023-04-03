@@ -1,0 +1,23 @@
+sugarcube-2:
+  macros:
+    showcycle:
+      name: showcycle
+    showmeter:
+      name: showmeter
+    newcycle:
+      name: newcycle
+      container: true
+    phase:
+      name: phase
+    newmeter:
+      name: newmeter
+      container: true
+    animation:
+      name: animation
+    sizing:
+      name: sizing
+    colors:
+      name: colors
+    dialog:
+      name: dialog
+      container: true
