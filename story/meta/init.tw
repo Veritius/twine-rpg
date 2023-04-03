@@ -1,6 +1,7 @@
 :: StoryInit
 
 <<set $DaysPassed to 0>>
+<<set $%%TimeIncrementor to 0>>
 
 <<include StoryInitPlayer>>
 <<include StoryInitCycles>>

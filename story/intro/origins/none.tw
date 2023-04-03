@@ -1,4 +1,4 @@
-:: CharacterOriginNone [cycles.pause.menu]
+:: CharacterOriginNone
 <<silently>>
     <<set $Player.Origin to "None">>
     <<set $Player.Skills.Acrobatics to 1>>

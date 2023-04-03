@@ -1,4 +1,4 @@
-:: CharacterOriginFallenNoble [cycles.pause.menu]
+:: CharacterOriginFallenNoble
 <<silently>>
     <<set $Player.Origin to "Fallen Noble">>
     <<set $Player.Skills.History to 3>>

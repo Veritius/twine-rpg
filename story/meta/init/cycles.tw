@@ -9,7 +9,7 @@
 */
 
 <!-- Make sure this matches the ordering in the months cycle! -->
-<<newcycle 'seasons' 1620>>
+<<newcycle 'seasons' 1620 suspend>>
 	<<phase 'Spring'>>
     <<phase 'Summer'>>
 	<<phase 'Autumn'>>
@@ -23,7 +23,7 @@ May change in future.
 
 All months are 15 days each. Too hard otherwise with the cycles system.
 -->
-<<newcycle 'months' 540>>
+<<newcycle 'months' 540 suspend>>
     <!-- Spring -->
     <<phase 'September'>> <!-- Player starts in September -->
     <<phase 'October'>>
@@ -42,7 +42,7 @@ All months are 15 days each. Too hard otherwise with the cycles system.
     <<phase 'August'>>
 <</newcycle>>
 
-<<newcycle 'days' 36>>
+<<newcycle 'days' 36 suspend>>
     <<phase 'Wednesday'>> <!-- Player starts on Wednesday -->
     <<phase 'Thursday'>>
     <<phase 'Friday'>>
@@ -52,7 +52,7 @@ All months are 15 days each. Too hard otherwise with the cycles system.
     <<phase 'Tuesday'>>
 <</newcycle>>
 
-<<newcycle 'time' 6>>
+<<newcycle 'time' 6 suspend>>
     <<phase 'Evening'>> <!-- Player starts in the evening. -->
     <<phase 'Night'>>
     <<phase 'Dawn'>> <!-- Actual start of day -->

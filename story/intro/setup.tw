@@ -1,4 +1,4 @@
-:: CharacterSetupInitial [cycles.pause.menu]
+:: CharacterSetupInitial
 <<type 30ms>>You stumble into a tavern, your cloak flapping in the wind.<</type>>
 <<type 30ms start 0.2s>>In front of you is an old man. He watches you for a long while, then finally speaks.<</type>>
 <<type 40ms start 0.3s>>"Welcome, traveller, to my humble tavern. It's a little dark, who am I talkin' to?"<</type>>

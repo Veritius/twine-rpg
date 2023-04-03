@@ -1,4 +1,4 @@
-:: CharacterSetupOrigin [cycles.pause.menu]
+:: CharacterSetupOrigin
 
 <<type 40ms start 0.4s>>The old man merely nods, and motions for you to sit.
 "I see you've been on a long journey. Tell me, what brings you here?"<</type>>\
