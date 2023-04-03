@@ -4,7 +4,7 @@
     <<set $Player.Skills.Athletics to 3>>
     <<set $Player.Skills.Deception to 3>>
     <<set $Player.Skills.Intimidation to 2>>
-    <<set $Player.Skills.SleightOfHand to 2>>
+    <<set $Player.Skills.Thievery to 2>>
 <</silently>>\
 <<type 30ms>>//"I escaped a prison in a far off land, and have been hunted ever since. I only just arrived here by boat, but I'm sure my hunters are close on my trail."//<</type>>
 <<type 40ms start 1s>>//The old man coughs violently, then starts to speak.//<</type>>

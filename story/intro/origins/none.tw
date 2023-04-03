@@ -10,7 +10,7 @@
     <<set $Player.Skills.Intimidation to 1>>
     <<set $Player.Skills.Performance to 1>>
     <<set $Player.Skills.Persuasion to 1>>
-    <<set $Player.Skills.SleightOfHand to 1>>
+    <<set $Player.Skills.Thievery to 1>>
     <<set $Player.Skills.Survival to 1>>
 <</silently>>\
 <<type 30ms>>//"I'd rather not say, if it's all the same to you."//<</type>>

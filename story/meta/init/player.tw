@@ -36,7 +36,7 @@
 <<set $Player.Skills.Intimidation to 0>>
 <<set $Player.Skills.Performance to 0>>
 <<set $Player.Skills.Persuasion to 0>>
-<<set $Player.Skills.SleightOfHand to 0>>
+<<set $Player.Skills.Thievery to 0>>
 <<set $Player.Skills.Survival to 0>>
 
 <<!-- Player morality tracker -->>

@@ -19,7 +19,7 @@ Your origin may not be changed after the fact, but you can assign skill points y
 
 <<link "I escaped a prison in a far off land and have been hunted ever since." "CharacterOriginEscapee">><</link>>
     <i>As an escapee, you are a talented thief. <!-- TODO: do better here -->
-    <span class="beneficial">+3 to Athletics and Deception, +2 to Intimidation and Sleight of Hand
+    <span class="beneficial">+3 to Athletics and Deception, +2 to Intimidation and Thievery
     Unlocks Escapee dialogue options.</span>
     <span class="detrimental">You are a wanted man.</span></i>
 

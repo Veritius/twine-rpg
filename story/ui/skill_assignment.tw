@@ -1,13 +1,45 @@
 :: SkillPointAssignmentUi
-You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> points remaining.
-Your Acrobatics skill is <span class="stat-annotation">$Player.Skills.Acrobatics.</span>
-Your Athletics skill is <span class="stat-annotation">$Player.Skills.Athletics.</span>
-Your Perception skill is <span class="stat-annotation">$Player.Skills.Perception.</span>
-Your History skill is <span class="stat-annotation">$Player.Skills.History.</span>
-Your Deception skill is <span class="stat-annotation">$Player.Skills.Deception.</span>
-Your Insight skill is <span class="stat-annotation">$Player.Skills.Insight.</span>
-Your Intimidation skill is <span class="stat-annotation">$Player.Skills.Intimidation.</span>
-Your Performance skill is <span class="stat-annotation">$Player.Skills.Performance.</span>
-Your Persuasion skill is <span class="stat-annotation">$Player.Skills.Persuasion.</span>
-Your Sleight Of Hand skill is <span class="stat-annotation">$Player.Skills.SleightOfHand.</span>
-Your Survival skill is <span class="stat-annotation">$Player.Skills.Survival.</span>
+<span id="skill-point-menu">\
+You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> points remaining.\
+
+<<nobr>>
+    <<for _skill, _value range $Player.Skills>>
+        <<skillmenu _skill>>
+    <</for>>
+    <<if $CheatsEnabled is true>>
+        <br>
+        <<link "Give unlimited skill points">>
+            <<set $Player.RemainingSkillPoints to 999999>>
+            <<replace "#skill-point-menu">>
+                <<include "SkillPointAssignmentUi">>
+            <</replace>>
+        <</link>>
+    <</if>>
+<</nobr>>\
+</span>
+
+:: SkillPointAssignmentUiWidgets [widget]
+<<widget "skillmenu">>\
+    <span id="skill-menu-unset">\
+    <<nobr>>
+        <!-- TODO: Figure out a better way of doing this, as it causes flicker when clicked. -->
+        <<timed 5ms>>
+            <<script>>document.getElementById("skill-menu-unset").id = ("skill-menu-" + temporary().args[0]);<</script>>
+        <</timed>>
+        <<set _skill to _args[0]>>
+        <<set _value to variables()["Player"]["Skills"][_skill]>>
+        Your _skill skill is _value.
+        <<link "[+]">>
+            <<if $Player.RemainingSkillPoints > 0>>
+                <<set $Player.RemainingSkillPoints-->>
+                <<set _skill to _args[0]>>
+                <<script>>
+                    variables()["Player"]["Skills"][temporary()["args"][0]]++;
+                <</script>>
+                <<set _target to "#skill-menu-" + _skill>>
+                <<replace _target t8n>><<skillmenu _skill>><</replace>>
+            <</if>>
+        <</link>>
+    <</nobr>>\
+    </span>\
+<</widget>>

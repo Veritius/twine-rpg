@@ -21,3 +21,5 @@ sugarcube-2:
     dialog:
       name: dialog
       container: true
+    skillmenu:
+      name: skillmenu
