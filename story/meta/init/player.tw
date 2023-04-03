@@ -39,7 +39,8 @@
 <<set $Player.Skills.Thievery to 0>>
 <<set $Player.Skills.Survival to 0>>
 
-<<!-- Player morality tracker -->>
+<!-- Player morality tracker -->
 <<set $Player.Morality to {}>>
+<<set $Player.KillCount to 0>>
 <<set $Player.Morality.Kindness to 0>>
 <<set $Player.Morality.Generosity to 0>>
