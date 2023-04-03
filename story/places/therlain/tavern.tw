@@ -20,7 +20,7 @@ You watch the old man raise his hands, <span class="magical">arcs of arcane ener
 
 Before you can react, a tremendous bolt of lightning hits you in the chest, \
 <<nobr>> <!-- Do better -->
-    <<if $Player.Health < 60 && $Player.Magic < 30>>>>
+    <<if $Player.Health < 60 && $Player.Magic < 30>>
         <span style="color:red">killing you instantly.</span>
     <<elseif $Player.Magic >= 30 >>
         <<set $Player.Magic to $Player.Magic - 30>>
