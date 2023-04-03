@@ -1,0 +1,12 @@
+:: StoryInitQuests
+
+<!--
+Quests:
+Put whatever data you want in them, but they:
+- have to have the property 'Title' (string)
+- have to have the property 'IsComplete' (bool)
+- have to have the property 'ReferentPassage' (string)
+    - this passage will be <<include>>'ed in the quests page
+-->
+
+<<set $Quests to {}>>

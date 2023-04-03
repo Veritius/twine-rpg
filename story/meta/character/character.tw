@@ -6,6 +6,29 @@ It has been <span class="stat-annotation">$DaysPassed</span> days since your adv
 
 You have <span style="color: gold">$Player.Gold</span> gold.
 \
+<<nobr>>
+<<set _questcounter to 0>>
+<<for _quest, _value range $Quests>>
+    <<if _value.IsComplete eq false>>
+        <<set _questcounter++>>
+    <</if>>
+<</for>>
+<<if _questcounter > 0>>
+    <hr>
+    You have <span class="stat-annotation">_questcounter</span> active quests.
+    <br>
+    <div style="flex-direction: column">
+    <<for _quest, _value range $Quests>>
+        <div class="box-white" style="width: 80%">
+            <font size="4"><<= _value.Title>></font>
+            <br>
+            <<include _value.ReferentPassage>>
+        </div>
+    <</for>>
+    </div>
+<</if>>
+<</nobr>>\
+\
 <<if $Player.CanCastMagic is true>>
     You are <span class="magical">blessed with magical powers.</span>
     You have a mana pool of <span class="stat-annotation">$Player.MaxMagic</span>, which is <span class="stat-annotation"><<= ($Player.Magic / $Player.MaxMagic) * 100>>% full.</span>

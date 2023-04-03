@@ -6,3 +6,4 @@
 <<include StoryInitCycles>>
 <<include StoryInitMeters>>
 <<include StoryInitPlaces>>
+<<include StoryInitQuests>>
