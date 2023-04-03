@@ -3,10 +3,29 @@
 <span id="health">\
 Health: $Player.Health/$Player.MaxHealth \
 <<nobr>>
-<<link "+">><<set $Player.Health++>><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
-<<link "-">><<set $Player.Health-->><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
+<<link "+">>
+    <<modifystat "health" 1>>
+    <<replace "#health">>
+        <<include "CheatMenuHealth">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "health" -1>>
+    <<replace "#health">>
+        <<include "CheatMenuHealth">>
+    <</replace>>
+<</link>>
 /
-<<link "+">><<set $Player.MaxHealth++>><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
-<<link "-">><<set $Player.MaxHealth-->><<replace "#health">><<include "CheatMenuHealth">><</replace>><</link>>
-<</nobr>>
+<<link "+">>
+    <<modifystat "health" 1 true>>
+    <<replace "#health">>
+        <<include "CheatMenuHealth">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "health" -1 true>>
+    <<replace "#health">>
+        <<include "CheatMenuHealth">>
+    <</replace>>
+<</link>><</nobr>>
 </span>

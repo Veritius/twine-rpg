@@ -1,0 +1,3 @@
+:: PlayerDeathScreen [cycles.pause]
+
+<h1><span style="color: red"><i><<type 160ms>>You have died.<</type>></i></span></h1>

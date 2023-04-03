@@ -1,0 +1,35 @@
+:: PlayerStatsMacros [widget]
+
+<!-- Adds or subtracts from a player stat.
+Arguments: [health/stamina/magic] [amount] (ismax) -->
+<<widget "modifystat">>
+    <<nobr>>
+        <<if _args[2] != null && _args[2] == true>>
+            <<switch _args[0]>>
+                <<case "health">>
+                    <<set $Player.MaxHealth to $Player.MaxHealth + _args[1]>>
+                    <<set $Player.Health to $Player.Health.clamp(0, $Player.MaxHealth)>>
+                <<case "stamina">>
+                    <<set $Player.MaxStamina to $Player.MaxStamina + _args[1]>>
+                    <<set $Player.Stamina to $Player.Stamina.clamp(0, $Player.MaxStamina)>>
+                <<case "magic">>
+                    <<set $Player.MaxMagic to $Player.MaxMagic + _args[1]>>
+                    <<set $Player.Magic to $Player.Magic.clamp(0, $Player.MaxMagic)>>
+            <</switch>>
+        <<else>>
+            <<switch _args[0]>>
+                <<case "health">>
+                    <<set $Player.Health to ($Player.Health + _args[1]).clamp(0, $Player.MaxHealth)>>
+                <<case "stamina">>
+                    <<set $Player.Stamina to ($Player.Stamina + _args[1]).clamp(0, $Player.MaxStamina)>>
+                <<case "magic">>
+                    <<set $Player.Magic to ($Player.Magic + _args[1]).clamp(0, $Player.MaxMagic)>>
+            <</switch>>
+        <</if>>
+
+        <!-- Death condition -->
+        <<if $Player.Health <= 0>>
+            <<goto "PlayerDeathScreen">>
+        <</if>>
+    <</nobr>>\
+<</widget>>

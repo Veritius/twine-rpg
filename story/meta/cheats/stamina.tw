@@ -3,10 +3,29 @@
 <span id="stamina">\
 Stamina: $Player.Stamina/$Player.MaxStamina \
 <<nobr>>
-<<link "+">><<set $Player.Stamina++>><<replace "#stamina">><<include "CheatMenuStamina">><</replace>><</link>>
-<<link "-">><<set $Player.Stamina-->><<replace "#stamina">><<include "CheatMenuStamina">><</replace>><</link>>
+<<link "+">>
+    <<modifystat "stamina" 1>>
+    <<replace "#stamina">>
+        <<include "CheatMenuStamina">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "stamina" -1>>
+    <<replace "#stamina">>
+        <<include "CheatMenuStamina">>
+    <</replace>>
+<</link>>
 /
-<<link "+">><<set $Player.MaxStamina++>><<replace "#stamina">><<include "CheatMenuStamina">><</replace>><</link>>
-<<link "-">><<set $Player.MaxStamina-->><<replace "#stamina">><<include "CheatMenuStamina">><</replace>><</link>>
-<</nobr>>
+<<link "+">>
+    <<modifystat "stamina" 1 true>>
+    <<replace "#stamina">>
+        <<include "CheatMenuStamina">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "stamina" -1 true>>
+    <<replace "#stamina">>
+        <<include "CheatMenuStamina">>
+    <</replace>>
+<</link>><</nobr>>
 </span>

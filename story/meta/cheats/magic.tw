@@ -3,10 +3,29 @@
 <span id="magic">\
 Magic: $Player.Magic/$Player.MaxMagic \
 <<nobr>>
-<<link "+">><<set $Player.Magic++>><<replace "#magic">><<include "CheatMenuMagic">><</replace>><</link>>
-<<link "-">><<set $Player.Magic-->><<replace "#magic">><<include "CheatMenuMagic">><</replace>><</link>>
+<<link "+">>
+    <<modifystat "magic" 1>>
+    <<replace "#magic">>
+        <<include "CheatMenuMagic">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "magic" -1>>
+    <<replace "#magic">>
+        <<include "CheatMenuMagic">>
+    <</replace>>
+<</link>>
 /
-<<link "+">><<set $Player.MaxMagic++>><<replace "#magic">><<include "CheatMenuMagic">><</replace>><</link>>
-<<link "-">><<set $Player.MaxMagic-->><<replace "#magic">><<include "CheatMenuMagic">><</replace>><</link>>
-<</nobr>>
+<<link "+">>
+    <<modifystat "magic" 1 true>>
+    <<replace "#magic">>
+        <<include "CheatMenuMagic">>
+    <</replace>>
+<</link>>
+<<link "-">>
+    <<modifystat "magic" -1 true>>
+    <<replace "#magic">>
+        <<include "CheatMenuMagic">>
+    <</replace>>
+<</link>><</nobr>>
 </span>

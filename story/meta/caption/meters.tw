@@ -14,19 +14,19 @@ Health: You feel
 <<if $CheatsEnabled eq true>>
     <span class="debug-text" title="This is a debug option.">($Player.Health / $Player.MaxHealth)</span>
     <<link "[+v]">>
-        <<set $Player.Health++>>
+        <<modifystat "health" 1>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[-v]">>
-        <<set $Player.Health-->>
+        <<modifystat "health" -1>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[+m]">>
-        <<set $Player.MaxHealth++>>
+        <<modifystat "health" 1 true>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[-m]">>
-        <<set $Player.MaxHealth-->>
+        <<modifystat "health" -1 true>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <br>
@@ -46,19 +46,19 @@ Stamina: You feel
 <<if $CheatsEnabled eq true>>
     <span class="debug-text" title="This is a debug option.">($Player.Stamina / $Player.MaxStamina)</span>
     <<link "[+v]">>
-        <<set $Player.Stamina++>>
+        <<modifystat "stamina" 1>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[-v]">>
-        <<set $Player.Stamina-->>
+        <<modifystat "stamina" -1>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[+m]">>
-        <<set $Player.MaxStamina++>>
+        <<modifystat "stamina" 1 true>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <<link "[-m]">>
-        <<set $Player.MaxStamina-->>
+        <<modifystat "stamina" -1 true>>
         <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
     <</link>>
     <br>
@@ -80,19 +80,19 @@ Stamina: You feel
     <<if $CheatsEnabled eq true>>
         <span class="debug-text" title="This is a debug option.">($Player.Magic / $Player.MaxMagic)</span>
         <<link "[+v]">>
-            <<set $Player.Magic++>>
+            <<modifystat "magic" 1>>
             <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
         <</link>>
         <<link "[-v]">>
-            <<set $Player.Magic-->>
+            <<modifystat "magic" -1>>
             <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
         <</link>>
         <<link "[+m]">>
-            <<set $Player.MaxMagic++>>
+            <<modifystat "magic" 1 true>>
             <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
         <</link>>
         <<link "[-m]">>
-            <<set $Player.MaxMagic-->>
+            <<modifystat "magic" -1 true>>
             <<replace "#caption-meters">><<include "StoryCaptionMeters">><</replace>>
         <</link>>
         <br>

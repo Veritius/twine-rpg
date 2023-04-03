@@ -23,3 +23,5 @@ sugarcube-2:
       container: true
     skillui:
       name: skillmenu
+    modifystat:
+      name: modifystat
