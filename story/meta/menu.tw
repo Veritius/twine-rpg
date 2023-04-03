@@ -11,7 +11,7 @@
         <<include "OptionsMenu">>
     <</dialog>>
 <</link>>
-<<if $CheatsEnabled eq true>>
+<<if settings.cheatsEnabled eq true>>
     <<link "Cheats">>
         <<dialog "Cheats">>
             <<include "CheatMenu">>

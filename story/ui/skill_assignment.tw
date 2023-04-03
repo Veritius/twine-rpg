@@ -8,7 +8,7 @@ You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> point
         <<skillui _skill>>
     <</for>>
     </div>
-    <<if $CheatsEnabled is true>>
+    <<if settings.cheatsEnabled is true>>
         <br>
         <<link "Give unlimited skill points">>
             <<set $Player.RemainingSkillPoints to 999999>>
