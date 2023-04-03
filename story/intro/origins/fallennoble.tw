@@ -6,6 +6,6 @@
     <<set $Player.Skills.Performance to 2>>
     <<set $Player.Skills.Persuasion to 3>>
 <</silently>>\
-<<type 30ms>>//"I'm a nobleman trying to return my family to glory after we were unfairly stripped of our title, when our enemies conspired to frame us for a crime we did not commit."//<</type>>
+<<type 30ms>>//"I'm a noble<<person>> trying to return my family to glory after we were unfairly stripped of our title, when our enemies conspired to frame us for a crime we did not commit."//<</type>>
 <<type 40ms start 1s>>//The old man coughs violently, then starts to speak.//<</type>>
-<<type 40ms start 1s>>"A nobleman, eh? I've met a few in my time, many in this here bar, but none with a story quite like yours. I must say, I'd think you were pulling me leg if I hadn't heard stranger that turned out true."<</type>>
+<<type 40ms start 1s>>"A noble<<person>>, eh? I've met a few in my time, many in this here bar, but none with a story quite like yours. I must say, I'd think you were pulling me leg if I hadn't heard stranger that turned out true."<</type>>

@@ -8,4 +8,4 @@
 <</silently>>\
 <<type 30ms>>//"I escaped a prison in a far off land, and have been hunted ever since. I only just arrived here by boat, but I'm sure my hunters are close on my trail."//<</type>>
 <<type 40ms start 1s>>//The old man coughs violently, then starts to speak.//<</type>>
-<<type 40ms start 1s>>"A wanted man, eh? Well, I can't personally say I've had any run-ins with the law, even if what I do isn't //strictly// legal. But, you know, everyone needs a drink, even the king. And those people the king sends are hardly eager to shut down their favourite bar."<</type>>
+<<type 40ms start 1s>>"A wanted <<person>>, eh? Well, I can't personally say I've had any run-ins with the law, even if what I do isn't //strictly// legal. But, you know, everyone needs a drink, even the king. And those people the king sends are hardly eager to shut down their favourite bar."<</type>>
