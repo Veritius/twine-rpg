@@ -5,3 +5,8 @@ Setting.addToggle("cheatsEnabled", {
         UIBar.update()
     }
 });
+
+Setting.addToggle("lowViolence", {
+    label   : "Reduce the impact of violence",
+    default : false
+});
