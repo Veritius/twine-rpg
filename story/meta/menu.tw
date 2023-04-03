@@ -6,11 +6,6 @@
         <<include "CharacterMenu">>
     <</dialog>>
 <</link>>
-<<link "Options">>
-    <<dialog "Options">>
-        <<include "OptionsMenu">>
-    <</dialog>>
-<</link>>
 <<if settings.cheatsEnabled eq true>>
     <<link "Cheats">>
         <<dialog "Cheats">>
