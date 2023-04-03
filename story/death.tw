@@ -1,3 +1,20 @@
 :: PlayerDeathScreen [cycles.pause]
 
 <h1><span style="color: red"><i><<type 160ms>>You have died.<</type>></i></span></h1>
+<<type 40ms start 1s>>You lived <span class="stat-annotation">$DaysPassed</span> days.<</type>>
+
+<<nobr>>
+<<type 30ms start 2s>>
+    <<link "Try to turn back the clock">>
+        <<script>>
+            Save.autosave.load()
+        <</script>>
+    <</link>>
+    <br>
+    <<link "Accept your fate">>
+        <<script>>
+            Engine.restart()
+        <</script>>
+    <</link>>
+<</type>>
+<</nobr>>
