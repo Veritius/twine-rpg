@@ -3,9 +3,11 @@
 You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> points remaining.\
 
 <<nobr>>
+    <div style="display: flex; width: 800px; flex-basis: 30%; flex-wrap: wrap;">
     <<for _skill, _value range $Player.Skills>>
-        <<skillmenu _skill>>
+        <<skillui _skill>>
     <</for>>
+    </div>
     <<if $CheatsEnabled is true>>
         <br>
         <<link "Give unlimited skill points">>
@@ -19,8 +21,8 @@ You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> point
 </span>
 
 :: SkillPointAssignmentUiWidgets [widget]
-<<widget "skillmenu">>\
-    <span id="skill-menu-unset">\
+<<widget "skillui">>\
+    <span id="skill-menu-unset" style="border: 1.5px solid white; width: 30%; padding: 2px; margin: 3px; flex-grow: 1">\
     <<nobr>>
         <!-- TODO: Figure out a better way of doing this, as it causes flicker when clicked. -->
         <<timed 5ms>>
@@ -37,7 +39,7 @@ You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> point
                     variables()["Player"]["Skills"][temporary()["args"][0]]++;
                 <</script>>
                 <<set _target to "#skill-menu-" + _skill>>
-                <<replace _target t8n>><<skillmenu _skill>><</replace>>
+                <<replace _target t8n>><<skillui _skill>><</replace>>
             <</if>>
         <</link>>
     <</nobr>>\
