@@ -2,7 +2,7 @@
 
 <span id="styles-test">
     <<button "Reload page">>
-        <<replace "#styles-test">>
+        <<replace "#styles-test">>\
             <<include "StylesTest">>
         <</replace>>
     <</button>>
