@@ -1,6 +1,11 @@
 :: StoryMenu
 
 <<nobr>>
+<<link "Inventory">>
+    <<dialog "Inventory">>
+        <<include "PlayerInventory">>
+    <</dialog>>
+<</link>>
 <<link "Character">>
     <<dialog "Character">>
         <<include "CharacterMenu">>

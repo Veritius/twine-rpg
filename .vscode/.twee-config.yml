@@ -42,3 +42,7 @@ sugarcube-2:
     fancy:
       name: fancy
       container: true
+    newinv:
+      name: newinv
+    inv:
+      name: inv

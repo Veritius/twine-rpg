@@ -10,6 +10,7 @@
 <<set $Player.Gender to "Not chosen">>
 <<set $Player.Origin to "None">>
 <<set $Player.Temperature to 25>>
+<<newinv $Player.Inventory>>
 
 <!-- Player stats -->
 <<set $Player.MaxHealth to 20>>
