@@ -1,0 +1,18 @@
+:: StylesTest
+
+<span id="styles-test">
+    <<button "Reload page">>
+        <<replace "#styles-test">>
+            <<include "StylesTest">>
+        <</replace>>
+    <</button>>
+
+    This is normal text.
+    <b>This is bold text.</b>
+    <i>This is italicised text.</i>
+    <b><i>This is bold italicised text.</i></b>
+    <<fancy "magical">>This is magical text.<</fancy>>
+    <<fancy "blurry">>This is blurry text.<</fancy>>
+    <<fancy "rainbow">>This is rainbow text.<</fancy>>
+    <<fancy "abcdefghijklmnopqrstuvwxyz0123456789">>This is an invalid fancy macro.<</fancy>>
+</span>

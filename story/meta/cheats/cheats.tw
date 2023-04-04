@@ -1,6 +1,14 @@
 :: CheatMenu
 
 <<link "Reload sidebar">><<script>>UIBar.update()<</script>><</link>>
+<<nobr>>
+    <<textbox "_selectedPassage" "">>
+    <<button "Go to passage">>
+        <<if Story.has(_selectedPassage)>>
+            <<goto _selectedPassage>>
+        <</if>>
+    <</button>>
+<</nobr>>
 
 Origin: <<listbox "$Player.Origin" autoselect>>
 <<option "No origin" "None">>
