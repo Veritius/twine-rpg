@@ -1,0 +1,10 @@
+:: StoryInitItems
+
+<<item "debug_test_item" "Debug test item">>
+    <<description>>\
+        <<nobr>>
+            <span style="color: red">YOU SHOULD NOT SEE THIS!</span>
+        <</nobr>>\
+    <<unique>>
+    <<permanent>>
+<</item>>

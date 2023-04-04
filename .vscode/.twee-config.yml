@@ -46,3 +46,15 @@ sugarcube-2:
       name: newinv
     inv:
       name: inv
+    item:
+      name: item
+      container: true
+    consumable:
+      name: item
+      container: true
+    description:
+      name: description
+    unique:
+      name: unique
+    permanent:
+      name: permanent

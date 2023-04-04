@@ -1,3 +1,3 @@
 :: PlayerInventory
 
-<<inv $Player.Inventory use drop>>
+<<inv $Player.Inventory use drop inspect>>
