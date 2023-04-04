@@ -1,0 +1,40 @@
+:: CheatMenuTime
+
+<span id="cheats-time">\
+$DaysPassed days have passed.
+<<nobr>>
+    <<set _times to [
+        ["1 min", 1],
+        ["5 min", 5],
+        ["10 min", 10],
+        ["30 min", 30],
+        ["1 hr", 60],
+        ["6 hrs", 360],
+        ["12 hrs", 720],
+        ["BREAK"]
+        ["1 day", 1440],
+        ["1 week", 10080],
+        ["1 month", 40320],
+        ["6 months", 241920],
+        ["1 year", 483840]
+    ]>>
+    <<for _i, _value range _times>>
+        <<if _value[0] is "BREAK">>
+            <br>
+        <<else>>
+            <<set _message to "+"+_value[0]>>
+            <<set _time to _value[1]>>
+            <<capture _time, _message>>
+                <<link _message>>
+                    <<advancetime _time>>
+                    <<replace "#cheats-time">>
+                        <<include "CheatMenuTime">>
+                    <</replace>>
+                <</link>>
+            <</capture>>
+        <</if>>
+    <</for>>
+<</nobr>>
+It is <<showcycle 'time'>> on <<showcycle 'days'>>, <<showcycle 'months'>>
+The season is <<showcycle 'seasons'>>\
+</span>

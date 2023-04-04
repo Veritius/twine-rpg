@@ -21,7 +21,5 @@ Gender: <<listbox "$Player.Gender" autoselect>>
 <<include "CheatMenuStamina">>\
 <<include "CheatMenuMagic">>\
 <<include "CheatMenuGold">>\
-<<include "CheatMenuTemperature">>\
-
-$DaysPassed days have passed.
-<<showcycle 'time'>> <<showcycle 'days'>> <<showcycle 'months'>> <<showcycle 'seasons'>>
+<<include "CheatMenuTemperature">>
+<<include "CheatMenuTime">>\

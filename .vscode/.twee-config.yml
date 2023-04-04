@@ -37,3 +37,5 @@ sugarcube-2:
       name: themself
     person:
       name: person
+    advancetime:
+      name: advancetime
