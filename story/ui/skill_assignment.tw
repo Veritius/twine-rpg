@@ -16,6 +16,15 @@ You have <span class="stat-annotation">$Player.RemainingSkillPoints</span> point
                 <<include "SkillPointAssignmentUi">>
             <</replace>>
         <</link>>
+        <br>
+        <<link "Set all skills really high">>
+            <<for _skill, _value range $Player.Skills>>
+                <<set $Player.Skills[_skill] to 500>>
+            <</for>>
+            <<replace "#skill-point-menu">>
+                <<include "SkillPointAssignmentUi">>
+            <</replace>>
+        <</link>>
     <</if>>
 <</nobr>>\
 </span>
