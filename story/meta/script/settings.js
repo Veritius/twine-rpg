@@ -6,6 +6,14 @@ Setting.addToggle("cheatsEnabled", {
     }
 });
 
+Setting.addToggle("effectsEnabled", {
+    label    : "Enable special effects for text",
+    default  : true,
+    onChange : function () {
+        UIBar.update()
+    }
+});
+
 Setting.addToggle("lowViolence", {
     label   : "Reduce the impact of violence",
     default : false

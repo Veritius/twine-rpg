@@ -39,3 +39,6 @@ sugarcube-2:
       name: person
     advancetime:
       name: advancetime
+    fancy:
+      name: fancy
+      container: true

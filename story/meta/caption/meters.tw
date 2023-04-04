@@ -69,7 +69,7 @@ Stamina: You feel
     <br>
     <<set _frac to $Player.Magic / $Player.MaxMagic>>
     Magic: You feel
-    <<if _frac > 1>><span class="magical">like you're bursting with power!</span><</if>>
+    <<if _frac > 1>><<fancy "magical">>like you're bursting with power!<</fancy>><</if>>
     <<if _frac >= 0.9 && _frac <= 1.0>><span class="stat-excellent">potent and energetic!</span><</if>>
     <<if _frac >= 0.7 && _frac < 0.9>><span class="stat-good">good.</span><</if>>
     <<if _frac >= 0.5 && _frac < 0.7>><span class="stat-okay">okay.</span><</if>>

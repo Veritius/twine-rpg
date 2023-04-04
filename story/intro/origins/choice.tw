@@ -27,6 +27,6 @@ Your origin may not be changed after the fact, but you can assign skill points y
     <i>You are a scholar of the arcane arts, wielding incredible power shunned by your peers.
     <span class="beneficial">+3 to History and Insight
     Unlocks Mage dialogue options.</span>
-    <span class="magical">Unlocks magic, immensely powerful but hazardous powers.</span>
+    <<fancy "magical">>Unlocks magic, immensely powerful but hazardous powers.<</fancy>>
     <span class="detrimental">Magic is shunned in insert the name of the country here.</span></i>
 <</timed>><</type>>

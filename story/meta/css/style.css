@@ -13,6 +13,10 @@
         0 0 4px rgba(30, 143, 255, 0.3);
 }
 
+.blurry {
+    filter: blur(0.75px);
+}
+
 .rainbow {
     /* Stolen from https://stackoverflow.com/a/63791417 */
 

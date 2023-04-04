@@ -1,0 +1,22 @@
+:: TextStyleMacros [widget]
+
+<!-- Fancy CSS effects for text. -->
+<<widget "fancy" container>>\
+<<nobr>>\
+    <!-- Check if text effects are enabled -->
+    <<if settings.effectsEnabled is true>>
+        <<switch _args[0]>>
+        <<case "magical">>
+            <span class="magical">_contents</span>
+        <<case "blurry" "blurred">>
+            <span class="blurry">_contents</span>
+        <<case "rainbow">>
+            <span class="rainbow">_contents</span>
+        <<default>>
+            _contents
+        <</switch>>
+    <<else>>
+        _contents
+    <</if>>
+<</nobr>>\
+<</widget>>

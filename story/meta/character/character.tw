@@ -30,7 +30,7 @@ You have <span style="color: gold">$Player.Gold</span> gold.
 <</nobr>>\
 \
 <<if $Player.CanCastMagic is true>>
-    You are <span class="magical">blessed with magical powers.</span>
+    You are <<fancy "magical">>blessed with magical powers.<</fancy>>
     You have a mana pool of <span class="stat-annotation">$Player.MaxMagic</span>, which is <span class="stat-annotation"><<= ($Player.Magic / $Player.MaxMagic) * 100>>% full.</span>
 <</if>>\
 <hr>
