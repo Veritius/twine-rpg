@@ -1,7 +1,11 @@
 :: CharacterMenu
 
 You are $Player.FirstName $Player.LastName
-You <<if $Player.Origin is "None">>have <span class="stat-annotation">no origin.</span><<else>>are a <span class="stat-annotation">$Player.Origin.</span><</if>>
+You are <<nobr>>
+    <<for _trait range $Player.Traits>>
+        a _trait
+    <</for>>
+<</nobr>>
 It has been <span class="stat-annotation">$DaysPassed</span> days since your adventure began.
 
 You have <span style="color: gold">$Player.Gold</span> gold.

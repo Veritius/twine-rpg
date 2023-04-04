@@ -1,6 +1,5 @@
 :: CharacterOriginNone
 <<silently>>
-    <<set $Player.Origin to "None">>
     <<set $Player.Skills.Acrobatics to 1>>
     <<set $Player.Skills.Athletics to 1>>
     <<set $Player.Skills.Perception to 1>>

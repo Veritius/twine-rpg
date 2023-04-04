@@ -1,6 +1,6 @@
 :: CharacterOriginEscapee
 <<silently>>
-    <<set $Player.Origin to "Escapee">>
+    <<run $Player.Traits.push("Escapee")>>
     <<set $Player.Skills.Athletics to 3>>
     <<set $Player.Skills.Deception to 3>>
     <<set $Player.Skills.Intimidation to 2>>

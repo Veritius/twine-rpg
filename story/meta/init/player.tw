@@ -8,7 +8,7 @@
 <<set $Player.FirstName to "">>
 <<set $Player.LastName to "">>
 <<set $Player.Gender to "Not chosen">>
-<<set $Player.Origin to "None">>
+<<set $Player.Traits to []>>
 <<set $Player.Temperature to 25>>
 <<newinv $Player.Inventory>>
 

@@ -10,15 +10,15 @@
     <</button>>
 <</nobr>>
 
-Origin: <<listbox "$Player.Origin" autoselect>>
-<<option "No origin" "None">>
-<<option "Fallen Noble" "Fallen Noble">>
-<<option "Escapee" "Escapee">>
-<</listbox>>
 Gender: <<listbox "$Player.Gender" autoselect>>
 <<option "Male" "Male">>
 <<option "Female" "Female">>
 <</listbox>>
+Traits: <<nobr>>
+    <<for _trait range $Player.Traits>>
+        _trait
+    <</for>>
+<</nobr>>
 
 <<cycle "$Player.CanCastMagic" autoselect>>
     <<option "Magic is enabled" true>>

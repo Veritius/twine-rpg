@@ -1,6 +1,6 @@
 :: CharacterOriginMage
 <<silently>>
-    <<set $Player.Origin to "Mage">>
+    <<run $Player.Traits.push("Mage")>>
     <<set $Places.Therlain.OldMan.Reputation to -25>>
     <<set $Player.CanCastMagic to true>>
     <<set $Player.Skills.History to 3>>
