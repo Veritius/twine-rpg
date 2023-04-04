@@ -11,6 +11,11 @@ Macro.add('advancetime', {
 
         // Coerce first argument to number.
         let amount = this.args[0] *= 1;
+
+        if (amount <= 0) {
+            return this.error("Zero or negative numbers cannot be passed");
+        }
+
         let time = State.variables["%%timeIncrementor"];
         let vtime = time + amount;
         let increments = vtime / 60;
