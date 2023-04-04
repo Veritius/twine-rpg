@@ -33,9 +33,24 @@
     background-size: calc(var(--d)/var(--sin)) 100%;
     background-clip: text;
     color: transparent;
-    animation: moving-background 6s linear infinite reverse;
+    animation: moving-background-seamless 6s linear infinite reverse;
 }
 
-@keyframes moving-background {
+.shining {
+    --d: 100px;
+    --angle: 60deg;
+    --sin: 0.866;
+
+    background-image: repeating-linear-gradient(
+        var(--angle), gray, gray 5%, white 10%, gray 20%, gray var(--d)
+    );
+    background-size: calc(var(--d)/var(--sin)) 100%;
+    background-clip: text;
+    color: transparent;
+    animation: moving-background-seamless 3s linear infinite reverse;
+}
+
+/* Seamless moving background for repeating gradients, powered by Math(tm) */
+@keyframes moving-background-seamless {
     0% { background-position: calc(var(--d)/var(--sin)) 0 };
 }

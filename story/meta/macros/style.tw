@@ -23,6 +23,12 @@
         <<else>>
             _contents
         <</if>>
+    <<case "shining" "shiny">>
+        <<if settings.effectsEnabled is true>>
+            <span class="shining">_contents</span>
+        <<else>>
+            <span style="color: lightgray">_contents</span>
+        <</if>>
     <<default>>
         <span style="background-color: red; color: white;">YOU TYPED IN THE FANCY MACRO WRONG</span>
     <</switch>>
