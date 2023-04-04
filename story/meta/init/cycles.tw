@@ -1,15 +1,16 @@
 :: StoryInitCycles
 
 /*
-6 turns per time step
-6 phases in time cycle
-6*6 = 36 turns per day
-36*15 = 540 turns per month
-540*3 = 1620 turns per season
+4 hours per time phase
+4*6 = 24 hours per day
+15 days per month (intentional)
+24*15 = 360 hours per month
+3 months per season
+360*3 = 1080 hours per season
 */
 
 <!-- Make sure this matches the ordering in the months cycle! -->
-<<newcycle 'seasons' 1620 suspend>>
+<<newcycle 'seasons' 1080 suspend>>
 	<<phase 'Spring'>>
     <<phase 'Summer'>>
 	<<phase 'Autumn'>>
@@ -23,7 +24,7 @@ May change in future.
 
 All months are 15 days each. Too hard otherwise with the cycles system.
 -->
-<<newcycle 'months' 540 suspend>>
+<<newcycle 'months' 360 suspend>>
     <!-- Spring -->
     <<phase 'September'>> <!-- Player starts in September -->
     <<phase 'October'>>
@@ -42,7 +43,7 @@ All months are 15 days each. Too hard otherwise with the cycles system.
     <<phase 'August'>>
 <</newcycle>>
 
-<<newcycle 'days' 36 suspend>>
+<<newcycle 'days' 24 suspend>>
     <<phase 'Wednesday'>> <!-- Player starts on Wednesday -->
     <<phase 'Thursday'>>
     <<phase 'Friday'>>
@@ -52,7 +53,7 @@ All months are 15 days each. Too hard otherwise with the cycles system.
     <<phase 'Tuesday'>>
 <</newcycle>>
 
-<<newcycle 'time' 6 suspend>>
+<<newcycle 'time' 4 suspend>>
     <<phase 'Evening'>> <!-- Player starts in the evening. -->
     <<phase 'Night'>>
     <<phase 'Dawn'>> <!-- Actual start of day -->

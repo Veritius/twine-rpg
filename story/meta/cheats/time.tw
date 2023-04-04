@@ -31,7 +31,7 @@ $DaysPassed days have passed.
         <</capture>>
     <</for>>
     </div>
-<</nobr>>
+<</nobr>>\
 It is <<showcycle 'time'>> on <<showcycle 'days'>>, <<showcycle 'months'>>
 The season is <<showcycle 'seasons'>>\
 </span>
