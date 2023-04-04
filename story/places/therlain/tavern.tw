@@ -16,7 +16,7 @@
 
 :: TherlainOldManAttack
 <<type 30ms>>"You've made your last mistake." the old man says. \
-You watch the old man raise his hands, <span class="magical">arcs of arcane energy dancing between his fingertips and along his arms.</span>
+You watch the old man raise his hands, <<fancy "magical">>arcs of arcane energy dancing between his fingertips and along his arms.<</fancy>>
 
 Before you can react, a tremendous bolt of lightning hits you in the chest, \
 <<nobr>> <!-- Do better -->
