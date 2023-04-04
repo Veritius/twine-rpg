@@ -15,6 +15,7 @@
 
 .blurry {
     filter: blur(0.75px);
+    color: lightgray;
 }
 
 .rainbow {

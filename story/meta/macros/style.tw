@@ -4,19 +4,27 @@
 <<widget "fancy" container>>\
 <<nobr>>\
     <!-- Check if text effects are enabled -->
-    <<if settings.effectsEnabled is true>>
-        <<switch _args[0]>>
-        <<case "magical">>
+    <<switch _args[0]>>
+    <<case "magical">>
+        <<if settings.effectsEnabled is true>>
             <span class="magical">_contents</span>
-        <<case "blurry" "blurred">>
+        <<else>>
+            <span style="color: dodgerblue">_contents</span>
+        <</if>>
+    <<case "blurry" "blurred">>
+        <<if settings.effectsEnabled is true>>
             <span class="blurry">_contents</span>
-        <<case "rainbow">>
+        <<else>>
+            <span style="color: lightgray">_contents</span>
+        <</if>>
+    <<case "rainbow">>
+        <<if settings.effectsEnabled is true>>
             <span class="rainbow">_contents</span>
-        <<default>>
+        <<else>>
             _contents
-        <</switch>>
-    <<else>>
-        _contents
-    <</if>>
+        <</if>>
+    <<default>>
+        <span style="background-color: red; color: white;">YOU TYPED IN THE FANCY MACRO WRONG</span>
+    <</switch>>
 <</nobr>>\
 <</widget>>
