@@ -1,4 +1,4 @@
 :: TherlainTownSquare
 You are in the town square of Therlain, a small village in the countryside.
 
-<<link "Enter the tavern" "TherlainOldMansTavern">><</link>>
+<<link "Enter the tavern (0:05)" "TherlainOldMansTavern">><<advancetime 5>><</link>>
