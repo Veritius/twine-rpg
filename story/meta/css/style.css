@@ -12,3 +12,25 @@
         0 0 2px rgba(30, 143, 255, 0.6),
         0 0 4px rgba(30, 143, 255, 0.3);
 }
+
+.rainbow {
+    /* Stolen from https://stackoverflow.com/a/63791417 */
+
+    --d: 100px;
+    --angle: 80deg;
+    --sin: 0.984; /* sin(angle) */
+
+    background-image: repeating-linear-gradient(
+        var(--angle),
+        red, orange, yellow, green, rgb(46, 46, 255), rgb(161, 30, 255), violet,
+        red var(--d)
+    );
+    background-size: calc(var(--d)/var(--sin)) 100%;
+    background-clip: text;
+    color: transparent;
+    animation: moving-background 6s linear infinite reverse;
+}
+
+@keyframes moving-background {
+    0% { background-position: calc(var(--d)/var(--sin)) 0 };
+}
