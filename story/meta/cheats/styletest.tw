@@ -14,5 +14,6 @@
     <<fancy "magical">>This is magical text.<</fancy>>
     <<fancy "blurry">>This is blurry text.<</fancy>>
     <<fancy "rainbow">>This is rainbow text.<</fancy>>
+    <<fancy "shining">>This is shining text.<</fancy>>
     <<fancy "abcdefghijklmnopqrstuvwxyz0123456789">>This is an invalid fancy macro.<</fancy>>
 </span>
